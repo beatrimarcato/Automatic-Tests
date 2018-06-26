@@ -30,7 +30,7 @@ namespace TakeTestExemple
 			driver.Manage().Window.Maximize();
 
 			Login();
-			OpenDispatcher();
+			//OpenDispatcher();
 			Filter();
 
 			//fecha tela
@@ -61,7 +61,8 @@ namespace TakeTestExemple
 
 		public void Filter()
 		{
-			
+			var btgerUser = driver.FindElement(By.XPath("[@id='Filtro']"));
+			btgerUser.Click();
 		}
 	}
 }
